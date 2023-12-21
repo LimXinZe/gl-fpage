@@ -1,0 +1,112 @@
+#ticketBox {
+    background-image: url(../image/ticket_background.png);
+    background-size: contain;
+
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    z-index: 9;
+    padding: 2rem 6rem;
+}
+
+#ticketBox .ticketBox-Design {
+    position: absolute;
+    top: -17px;
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ticketBox .ticketBox-Design.l {
+    left: 2px;
+    transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -10%);
+    -moz-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
+}
+
+#ticketBox .ticketBox-Design.r {
+    right: 2px;
+    transform: translate(50%, -10%);
+    -webkit-transform: translate(50%, -10%);
+    -moz-transform: translate(50%, -10%);
+    -ms-transform: translate(50%, -10%);
+    -o-transform: translate(50%, -10%);
+}
+
+#ticketBox .ticketBox-Design_Ball,
+#ticketBox .ticketBox-Design_smBall {
+    background-color: #eed7b2;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+#ticketBox .ticketBox-Design_Ball {
+    width: 100px;
+    height: 100px;
+}
+
+#ticketBox .ticketBox-Design_smBall {
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.ticketDetail:before {
+    content: var(--content);
+    width: 20%;
+    min-width: 180px;
+    display: inline-block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+.guessBox {
+    width: 330px;
+    height: 220px;
+    overflow: hidden;
+    user-select: none;
+}
+
+#guessBoxListsBox {
+    overflow: hidden;
+    height: 300px;
+}
+
+#guessBoxLists {
+    width: calc(330px * 40);
+    position: relative;
+    left: 0;
+    transition: left .5s;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -ms-transition: left .5s;
+    -o-transition: left .5s;
+}
+
+#guessBoxLists:before {
+    content: "";
+    display: block;
+    width: 100px;
+    visibility: hidden;
+}
